@@ -1,0 +1,19 @@
+{
+    "name": "brookin/shun-fei-sdk",
+    "description": "sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "brookin",
+            "email": "brookin@126.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "Brookin\\ShunFeiSDK\\":"src/Brookin/ShunFeiSDK",
+            "Brookin\\ShunFeiSDKTest\\":"src/Brookin/ShunFeiSDKTest"
+        }
+    },
+    "require": {}
+}
