@@ -8,9 +8,9 @@
 namespace Brookin\ShunFeiSDK\Creative;
 
 
-use Brookin\ShunFeiSDK\Request;
+use Brookin\ShunFeiSDK\Response;
 
-class CreativeStatusResponse extends Request
+class CreativeStatusResponse extends Response
 {
 
     /**

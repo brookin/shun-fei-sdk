@@ -1,25 +1,24 @@
 <?php
 /**
  * Created by PhpStorm.
- * Date: 12/15/17
- * Time: 6:14 PM
+ * Date: 12/16/17
+ * Time: 3:53 PM
  */
 
-namespace Brookin\ShunFeiSDK\Creative;
+namespace Brookin\ShunFeiSDK\Adposition;
 
 
 use Brookin\ShunFeiSDK\Response;
 
-class CreativeUpdateResponse extends Response
+class AdpositionListResponse extends Response
 {
-
     /**
-     * @var CreativeResponse[]
+     * @var AdpositionInfo[]
      */
-    public $result;
+    public $result = [];
 
     /**
-     * @return CreativeResponse[]
+     * @return AdpositionInfo[]
      */
     public function getResult()
     {
@@ -27,7 +26,7 @@ class CreativeUpdateResponse extends Response
     }
 
     /**
-     * @param CreativeResponse[] $result
+     * @param AdpositionInfo[] $result
      */
     public function setResult($result)
     {

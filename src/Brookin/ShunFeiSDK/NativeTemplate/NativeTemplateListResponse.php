@@ -1,25 +1,24 @@
 <?php
 /**
  * Created by PhpStorm.
- * Date: 12/15/17
- * Time: 6:14 PM
+ * Date: 12/16/17
+ * Time: 3:53 PM
  */
 
-namespace Brookin\ShunFeiSDK\Creative;
+namespace Brookin\ShunFeiSDK\NativeTemplate;
 
 
 use Brookin\ShunFeiSDK\Response;
 
-class CreativeUpdateResponse extends Response
+class NativeTemplateListResponse extends Response
 {
-
     /**
-     * @var CreativeResponse[]
+     * @var NativeTemplateList
      */
-    public $result;
+    public $result = [];
 
     /**
-     * @return CreativeResponse[]
+     * @return NativeTemplateList
      */
     public function getResult()
     {
@@ -27,11 +26,12 @@ class CreativeUpdateResponse extends Response
     }
 
     /**
-     * @param CreativeResponse[] $result
+     * @param NativeTemplateList $result
      */
     public function setResult($result)
     {
         $this->result = $result;
     }
+
 
 }
