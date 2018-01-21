@@ -30,12 +30,12 @@ class QualificationInfo
     /**
      * @var string
      */
-    public $Text;
+//    public $Text;
 
     /**
      * @var string
      */
-//    public $Image;
+    public $Image;
 
     /**
      * @var string

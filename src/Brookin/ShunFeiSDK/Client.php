@@ -40,11 +40,6 @@ class Client
         return  explode('::', $methodName)[1];
     }
 
-//    public function getToken()
-//    {
-//        return MARKETING_API_CLIENT_TOKEN;
-//    }
-
     public function getPath($method) {
         $this->path = sprintf('/%s/%s', $this->getModuleName(), $this->getActionName($method));
         return $this->path;
@@ -72,8 +67,9 @@ class Client
             }
         }
 
-        println($options);
         $res = $this->client->request($method, $url, $options);
-        print_r(json_decode($res->getBody()->getContents(), true));
+        $content = $res->getBody()->getContents();;
+        $response->rawData = $content;
+        $response->arrayData = \GuzzleHttp\json_decode($content, true);
     }
 }

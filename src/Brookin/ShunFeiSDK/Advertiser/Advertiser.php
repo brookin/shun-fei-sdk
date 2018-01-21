@@ -14,4 +14,8 @@ class Advertiser extends Client
     public function add(AdvertiserAddRequest $request, AdvertiserAddResponse $response) {
         $this->send(self::POST, '/advertiser/add', $request, $response);
     }
+
+    public function get(AdvertiserGetRequest $request, AdvertiserGetResponse $response) {
+        $this->send(self::POST, '/advertiser/status', $request, $response);
+    }
 }
