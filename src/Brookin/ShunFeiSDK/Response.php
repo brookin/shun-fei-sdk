@@ -10,5 +10,13 @@ namespace Brookin\ShunFeiSDK;
 
 class Response
 {
+    /**
+     * @var string
+     */
+    public $rawData;
 
+    /**
+     * @var array
+     */
+    public $arrayData;
 }
