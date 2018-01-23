@@ -8,7 +8,7 @@
 namespace Brookin\ShunFeiSDK\NativeTemplate;
 
 
-class NativeTitleInfo
+class NativeDataInfo
 {
     /**
      * @var int
