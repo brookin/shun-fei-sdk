@@ -31,7 +31,7 @@ class CreativeRequest
     /**
      * @var int
      */
-    public $CreativeId;
+//    public $CreativeId;
 
     /**
      * @var string
@@ -76,22 +76,22 @@ class CreativeRequest
     /**
      * @var array
      */
-    public $TargetTrack = [];
+    public $TargetTrack;
 
     /**
      * @var array
      */
-    public $DownloadUrl = [];
+    public $DownloadUrl;
 
     /**
      * @var array
      */
-    public $DestinationUrl = [];
+    public $DestinationUrl;
 
     /**
      * @var array
      */
-    public $MonitorUrls = [];
+    public $MonitorUrls;
 
     /**
      * @var int
@@ -116,7 +116,7 @@ class CreativeRequest
     /**
      * @var array
      */
-    public $AdxIds = [];
+    public $AdxIds;
 
     /**
      * @var int
