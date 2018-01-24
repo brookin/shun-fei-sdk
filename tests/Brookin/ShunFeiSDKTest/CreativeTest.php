@@ -10,7 +10,12 @@ namespace Brookin\ShunFeiSDKTest;
 use Brookin\ShunFeiSDK\Creative\Creative;
 use Brookin\ShunFeiSDK\Creative\CreativeAddRequest;
 use Brookin\ShunFeiSDK\Creative\CreativeAddResponse;
+use Brookin\ShunFeiSDK\Creative\CreativeAudit;
+use Brookin\ShunFeiSDK\Creative\CreativeAuditStatusRequest;
+use Brookin\ShunFeiSDK\Creative\CreativeAuditStatusResponse;
 use Brookin\ShunFeiSDK\Creative\CreativeRequest;
+use Brookin\ShunFeiSDK\Creative\CreativeStatusRequest;
+use Brookin\ShunFeiSDK\Creative\CreativeStatusResponse;
 use Brookin\ShunFeiSDK\Creative\NativeInfo;
 
 class CreativeTest extends \PHPUnit_Framework_TestCase
@@ -62,5 +67,20 @@ class CreativeTest extends \PHPUnit_Framework_TestCase
         $service = new Creative();
         $service->add($request, $response);
 
+    }
+
+    public function testStatus() {
+        $request = new CreativeStatusRequest();
+        $response = new CreativeStatusResponse();
+
+        $creative = new CreativeAuditStatusRequest();
+        $creative->setOCreativeIds(['c458e13fc1c55a37228ed1ca4f678b2e']);
+        $request->setRequest($creative);
+
+        $service = new Creative();
+        $service->status($request, $response);
+
+        print_r($request);
+        print_r($response);
     }
 }
